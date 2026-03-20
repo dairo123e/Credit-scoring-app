@@ -1,0 +1,30 @@
+# Ignorar imagenes
+*.jpg
+*.jpeg
+*.png
+
+# Ignorar el entorno virtual de desarrollo
+.venv/
+
+# Ignorar el cache de pytest
+.pytest_cache/
+
+# Ignorar archivos compilados de Python
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar carpetas de herramientas de MLOps que no son necesarias en producción
+mlruns/
+dvc.yaml
+.dvc/
+
+# examples
+python/xrays_evaluation/examples/
+
+# train/
+python/xrays_evaluation/src/training/
+
+# data
+datasets/

@@ -1,0 +1,29 @@
+steps:
+# Paso 1: Construir la imagen para credit-scoring-service
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/${PROJECT_ID}/ingeniia-services/credit-scoring-service:${SHORT_SHA}', '--file=container-images/credit_scoring/Dockerfile', '.']
+
+# Paso 2: Enviar (push) la imagen de credit-scoring-service
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'us-central1-docker.pkg.dev/${PROJECT_ID}/ingeniia-services/credit-scoring-service:${SHORT_SHA}']
+
+
+# Paso 3: Desplegar credit-scoring-service en Cloud Run
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args:
+    - 'run'
+    - 'deploy'
+    - 'credit-scoring-service'
+    - '--port=8080'
+    - '--image=us-central1-docker.pkg.dev/${PROJECT_ID}/ingeniia-services/credit-scoring-service:${SHORT_SHA}'
+    - '--platform=managed'
+    - '--region=us-central1'
+    - '--service-account=credit-scoring-sa@${PROJECT_ID}.iam.gserviceaccount.com'
+    - '--allow-unauthenticated'
+    - '--memory=1Gi'
+
+
+options:
+  diskSizeGb: 100
+  logging: CLOUD_LOGGING_ONLY

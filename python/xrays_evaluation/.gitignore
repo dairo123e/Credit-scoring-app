@@ -1,0 +1,18 @@
+# python
+*.venv/
+*venv/
+venv/
+.venv/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.pytest_cache
+
+# runs
+src/training/train/runs
+src/training/train/mlruns
+
+# mlflow
+mlruns
+src/training/train/mlflow.db
