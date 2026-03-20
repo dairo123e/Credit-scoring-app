@@ -1,11 +1,11 @@
-# 💳 Credit Scoring App
+#  Credit Scoring App
 
 Aplicacion web para prediccion de riesgo crediticio mediante un modelo de Deep Learning (MLP).  
 El sistema permite capturar datos financieros desde un formulario, enviar la informacion a una API REST y mostrar una prediccion de riesgo (`good` o `bad`) junto con su probabilidad.
 
 ---
 
-## 📌 Descripcion del proyecto
+##  Descripcion del proyecto
 
 **Credit Scoring App** es una solucion academica orientada a evaluacion de riesgo crediticio.  
 La aplicacion integra:
@@ -16,7 +16,7 @@ La aplicacion integra:
 
 ---
 
-## 🧰 Tecnologias utilizadas
+##  Tecnologias utilizadas
 
 ### Frontend
 - React (Vite)
@@ -34,12 +34,12 @@ La aplicacion integra:
 
 ---
 
-## ⚙️ Instalacion y ejecucion
+##  Instalacion y ejecucion
 
 ## 1) Clonar repositorio
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone <https://github.com/dairo123e/Credit-scoring-app.git>
 cd deep_learning_services
 ```
 
@@ -76,18 +76,18 @@ http://localhost:5173
 
 ---
 
-## 🚀 Uso de la aplicacion
+##  Uso de la aplicacion
 
 1. Abrir la interfaz web del frontend.
 2. Completar los campos del formulario financiero.
 3. Hacer clic en **Predict risk**.
 4. Visualizar el resultado:
-   - `good` ✅ o `bad` ❌
+   - `good`  o `bad` 
    - Probabilidad del resultado (%)
 
 ---
 
-## 🔌 API utilizada
+##  API utilizada
 
 ### Endpoint
 ```text
@@ -126,7 +126,7 @@ POST
 
 ---
 
-## 🗂️ Estructura del proyecto
+##  Estructura del proyecto
 
 ```bash
 deep_learning_services/
@@ -161,7 +161,7 @@ deep_learning_services/
 
 ---
 
-## 👥 Integrantes del grupo
+##  Integrantes del grupo
 
 - Stiven David Alvares Olmos 1 - Codigo: 1076647769
 - Dairo Enrique Contreras Quintana 2 - Codigo: 1071608120
@@ -169,7 +169,7 @@ deep_learning_services/
 
 ---
 
-## 🎓 Objetivo academico
+##  Objetivo academico
 
 Desarrollar una aplicacion integral de Machine Learning aplicada a un problema real de riesgo crediticio, abarcando:
 
@@ -181,9 +181,9 @@ Desarrollar una aplicacion integral de Machine Learning aplicada a un problema r
 
 ---
 
-## 📈 Estado del proyecto
+##  Estado del proyecto
 
-**Estado:** ✅ Funcional / Terminado   
+**Estado:**  Funcional / Terminado   
 **Frontend:** operativo  
 **Backend:** operativo  
 **API de prediccion:** operativa  
